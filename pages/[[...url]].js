@@ -26,7 +26,7 @@ export async function getStaticProps({ params }){
     }
     console.log('RENDERING - url: ' + url)
 
-    const cobaltData = await getCobaltPageByUrl('globe-main', url)  // We're hardcoding the site name here, we'll see how to manage multi-site in another tutorial
+    const cobaltData = await getCobaltPageByUrl('my-site', url)  // We're hardcoding the site name here, we'll see how to manage multi-site in another tutorial
 
     const props = {
         cobaltData
